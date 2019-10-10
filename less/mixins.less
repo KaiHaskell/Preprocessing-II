@@ -1,1 +1,17 @@
 // Mixins in here
+
+.displayFlex(@just, @align) {
+  display: flex;
+  justify-content: @just;
+  align-items: @align;
+}
+
+.button(@fc, @c,@txt) {
+  width: 85%;
+  color: @fc;
+  background-color: @c;
+  font-size: 2rem;
+  text-align: @txt;
+  padding: 8px 0;
+  border-radius: 1rem;
+}

@@ -1,13 +1,10 @@
 .home {
-
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,6 +53,41 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      //My own code
+      .btn {
+        .button(white, @button-bg, center);
+      }
     }
   }
-}// home
+} // home
+
+header {
+  .displayFlex(space-between, center);
+  width: 70vw;
+  margin: auto;
+  padding: 2rem;
+}
+
+.funbus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80vw;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.funbusp {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 80vw;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-bottom: 2px dashed @navigation-border;
+}
+
+hr {
+  border: 2px dashed @navigation-border;
+}
+//Buttons
