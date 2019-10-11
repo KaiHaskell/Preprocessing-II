@@ -179,6 +179,11 @@ nav a {
   color: black;
   padding: 2rem;
 }
+@media (max-width: 500px) {
+  nav a {
+    padding: 1rem;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -200,16 +205,43 @@ nav a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 80%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 80%;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    jusity-content: flex-start;
+    align-items: center;
+    margin: 0, auto;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #c0c0c0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -223,6 +255,11 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 80%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -232,9 +269,24 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+    margin: 0, auto;
+  }
 }
 .home .content-pick .destination .btn {
   width: 85%;
@@ -245,13 +297,32 @@ nav a {
   padding: 8px 0;
   border-radius: 1rem;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    margin-left: 6%;
+  }
+}
 header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 70vw;
   margin: auto;
   padding: 2rem;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  header h1 {
+    margin: 0, auto;
+  }
 }
 .funbus {
   display: flex;

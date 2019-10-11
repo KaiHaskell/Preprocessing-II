@@ -1,7 +1,8 @@
 // Mixins in here
 
-.displayFlex(@just, @align) {
+.displayFlex(@fd, @just, @align) {
   display: flex;
+  flex-direction: @fd;
   justify-content: @just;
   align-items: @align;
 }
@@ -14,4 +15,10 @@
   text-align: @txt;
   padding: 8px 0;
   border-radius: 1rem;
+}
+
+.hoveranimation (1px 2px 3px @color) {
+  box-shadow: 1px 1px @color, 2px 2px @color, 3px 3px @color;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
 }
